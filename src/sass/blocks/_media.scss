@@ -1,0 +1,16 @@
+/* small devices, tablets */
+@media only screen and (max-width: 768px) {
+    .animated {
+      /*css transitions*/
+      -webkit-transition-property: none !important;
+      transition-property: none !important;
+      /*css transforms*/
+      -webkit-transform: none !important;
+      transform: none !important;
+      /*css animations*/
+      -webkit-animation: none !important;
+      animation: none !important;
+    }
+}
+
+

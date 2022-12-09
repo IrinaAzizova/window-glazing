@@ -1,0 +1,51 @@
+$blue-coclor: #0089cd;
+
+@import 'blocks/header';
+
+@import 'blocks/media';
+@import 'blocks/media/header-media';
+
+html {
+    /* overflow-x: hidden; */
+    font-size: 10px;
+}
+  
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+  
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+  
+.no-padding {
+    padding: 0 !important;
+}
+
+.button {
+    padding: 2.5rem 0rem;
+    font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid #ffc600;
+    border-radius: 1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffed26), to(#ffb400));
+    background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
+    -webkit-box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
+    box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
+}
+  
+.button:hover {
+    cursor: pointer;
+}
