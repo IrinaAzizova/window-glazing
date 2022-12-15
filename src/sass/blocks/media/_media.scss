@@ -13,4 +13,14 @@
     }
 }
 
-
+@media (max-width: 585px) {
+  .form {
+    padding: 2rem 3rem;
+    h2 {
+      font-size: 1.5rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}

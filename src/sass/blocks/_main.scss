@@ -1,0 +1,40 @@
+.main {
+    padding: 10rem 0;
+    background: #ffffff url(../../img/main/bg.png) center top / cover no-repeat;
+    h1 {
+        margin: 0;
+        font-size: 5.5rem;
+        line-height: 1.5;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #333333;
+        span {
+            font-size: 2.6rem;
+        }
+    }
+    &_features {
+        padding: 0;
+        margin-top: 13rem;
+        &_block {
+            text-align: center;
+            width: 110px;
+            .small_img {
+                margin-top: 1rem;
+            }
+            p {
+                margin-top: -6rem;
+                font-size: 1.3rem;
+                line-height: 1.3;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+    }
+    &_form {
+        margin-top: 2rem;
+    }
+}

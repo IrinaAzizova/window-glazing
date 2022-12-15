@@ -1,9 +1,8 @@
 $blue-coclor: #0089cd;
 
 @import 'blocks/header';
+@import 'blocks/main';
 
-@import 'blocks/media';
-@import 'blocks/media/header-media';
 
 html {
     /* overflow-x: hidden; */
@@ -15,6 +14,11 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #000000;
+}
+
+.status {
+    display: block;
+    color: red;
 }
 
 a:hover {
@@ -32,6 +36,48 @@ textarea:focus {
     padding: 0 !important;
 }
 
+.form {
+    padding: 2rem 5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    h2 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #333333;
+        line-height: 1.5;
+        span {
+            font-size: 2.4rem;
+            text-transform: uppercase;
+        }
+    }
+    &_input {
+        height: 5.8rem;
+        padding: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        &::placeholder {
+            color: #999;
+            opacity: 1;
+            font-size: 1.5rem;
+        }
+        &:focus {
+            color: transparent;
+        }
+    }
+    &_notice {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: #666;
+    }
+}
+
 .button {
     padding: 2.5rem 0rem;
     font-size: 1.7rem;
@@ -40,12 +86,60 @@ textarea:focus {
     font-style: normal;
     border: 1px solid #ffc600;
     border-radius: 1rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffed26), to(#ffb400));
     background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
-    -webkit-box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
     box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
 }
   
 .button:hover {
     cursor: pointer;
 }
+
+.section_header {
+    margin-bottom: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    h2 {
+        font-size: 3rem;
+        line-height: 1.4;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #333333;
+    }
+    &_sub {
+        margin-top: 2rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 17rem;
+        height: 0.2rem;
+        background: url(../img/glazing/line.png) 0 0 no-repeat;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+}
+  
+.prev {
+    left: 0;
+    background: url(../img/glazing/left_arrow.png) center no-repeat;
+    background-size: 70%;
+}
+  
+.next {
+    right: 0;
+    background: url(../img/glazing/right_arrow.png) center no-repeat;
+    background-size: 70%;
+}
+
+
+@import 'blocks/media/media';
+@import 'blocks/media/header-media';
+@import 'blocks/media/main-media';
