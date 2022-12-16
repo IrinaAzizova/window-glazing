@@ -1,8 +1,9 @@
 $blue-coclor: #0089cd;
+$orange-color: #ffb903;
 
 @import 'blocks/header';
 @import 'blocks/main';
-
+@import 'blocks/glazing';
 
 html {
     /* overflow-x: hidden; */
@@ -143,3 +144,4 @@ textarea:focus {
 @import 'blocks/media/media';
 @import 'blocks/media/header-media';
 @import 'blocks/media/main-media';
+@import 'blocks/media/glazing-media';

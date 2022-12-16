@@ -1,0 +1,67 @@
+@media (max-width: 1199px){
+    .glazing {
+        &_price {
+            padding: 0 4rem;
+            p {
+                margin-right: 2rem;
+                font-size: 1.7rem;
+                line-height: 1.5;
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .glazing {
+        &_block {
+            width: 18%;
+            img {
+                height: 12rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 585px){
+    .glazing {
+        padding: 5rem 0;
+        &_slider {
+            flex-direction: column;
+        }
+        &_block {
+            width: 80%;
+            height: 15rem;
+            margin-bottom: 5rem;
+        }
+        ul {
+            font-size: 1rem;
+            padding: 0 3rem;
+            li:before {
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+            }
+        }
+        &_price {
+            padding: 0 1rem;
+            p {
+                margin-right: 1rem;
+                font-size: 1.3rem;
+                span {
+                    font-size: 1rem;
+                }
+            }
+            &_btn {
+                width: 50%;
+                height: 5rem;
+                padding: 0rem;
+            }
+        }
+    }
+}
